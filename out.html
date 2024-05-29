@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Transport Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Vehicle Transport Converter</h1>
+    <div class="input-container">
+      <label for="distance">🛣️ Enter distance (in kilometers):</label>
+      <input type="number" id="distance" placeholder="Enter distance">
+    </div>
+    <div class="input-container">
+      <label for="vehicle">🚘 Select a vehicle:</label>
+      <select id="vehicle">
+        <option value="Alto">Maruti Suzuki Alto</option>
+        <option value="i20">Hyundai i20</option>
+        <option value="Nexon">Tata Nexon</option>
+        <option value="City">Honda City</option>
+        <option value="Thar">Mahindra Thar</option>
+        <option value="Innova">Toyota Innova Crysta</option>
+        <option value="Seltos">Kia Seltos</option>
+        <option value="Kwid">Renault Kwid</option>
+        <option value="EcoSport">Ford EcoSport</option>
+        <option value="Tiago">Tata Tiago</option>
+      </select>
+    </div>
+    <button id="calculate-btn">Calculate</button>
+    <div id="result-container">
+      <img id="vehicle-image" src="" alt="Vehicle Image" style="display: none; width: 100%; max-width: 300px; margin-top: 20px;">
+      <p id="result"></p>
+      <p id="fuel-consumption"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
